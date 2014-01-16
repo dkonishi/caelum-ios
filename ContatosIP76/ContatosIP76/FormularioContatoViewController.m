@@ -103,20 +103,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)nextField:(UITextField *)currentField
-{
-    NSInteger nextTag     = currentField.tag + 1;
-    UIResponder *nextField = [self.view viewWithTag:nextTag];
-    
-    if(nextField){
-        [nextField becomeFirstResponder];
-    }
-    else {
-        //or [self.txtSite resignFirstResponder];
-        [self.view endEditing:YES];
-    }
-}
-
 - (void)criaContato
 {
     Contato *contato = [self pegaDadosDoFormulario];

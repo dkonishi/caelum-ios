@@ -153,13 +153,13 @@
 						<reference key="IBUIFont" ref="404317825"/>
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 					</object>
-					<object class="IBUILabel" id="914953845">
+					<object class="IBUILabel" id="232896201">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{23, 272}, {61, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="1921447"/>
+						<reference key="NSNextKeyView" ref="764919539"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -307,7 +307,7 @@
 						<string key="NSFrame">{{109, 216}, {191, 30}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="914953845"/>
+						<reference key="NSNextKeyView" ref="232896201"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -330,13 +330,13 @@
 						<reference key="IBUIFontDescription" ref="484845170"/>
 						<reference key="IBUIFont" ref="401943150"/>
 					</object>
-					<object class="IBUITextField" id="1921447">
+					<object class="IBUITextField" id="764919539">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{100, 271}, {113, 30}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="540735413"/>
+						<reference key="NSNextKeyView" ref="1042270504"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -359,7 +359,7 @@
 						<reference key="IBUIFontDescription" ref="484845170"/>
 						<reference key="IBUIFont" ref="401943150"/>
 					</object>
-					<object class="IBUITextField" id="121398520">
+					<object class="IBUITextField" id="939582617">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{100, 310}, {113, 30}}</string>
@@ -387,13 +387,13 @@
 						<reference key="IBUIFontDescription" ref="484845170"/>
 						<reference key="IBUIFont" ref="401943150"/>
 					</object>
-					<object class="IBUILabel" id="540735413">
+					<object class="IBUILabel" id="1042270504">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 316}, {75, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="121398520"/>
+						<reference key="NSNextKeyView" ref="939582617"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -537,7 +537,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">txtLat</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="1921447"/>
+						<reference key="destination" ref="764919539"/>
 					</object>
 					<int key="connectionID">168</int>
 				</object>
@@ -545,54 +545,9 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">txtLong</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="121398520"/>
+						<reference key="destination" ref="939582617"/>
 					</object>
 					<int key="connectionID">169</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">nextField:</string>
-						<reference key="source" ref="394053358"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">20</int>
-					</object>
-					<int key="connectionID">120</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">nextField:</string>
-						<reference key="source" ref="277897929"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">20</int>
-					</object>
-					<int key="connectionID">122</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">nextField:</string>
-						<reference key="source" ref="880247282"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">20</int>
-					</object>
-					<int key="connectionID">123</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">nextField:</string>
-						<reference key="source" ref="116517407"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">20</int>
-					</object>
-					<int key="connectionID">124</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">nextField:</string>
-						<reference key="source" ref="436716945"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">20</int>
-					</object>
-					<int key="connectionID">125</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -602,24 +557,6 @@
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">158</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">nextField:</string>
-						<reference key="source" ref="1921447"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">20</int>
-					</object>
-					<int key="connectionID">162</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">nextField:</string>
-						<reference key="source" ref="121398520"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">20</int>
-					</object>
-					<int key="connectionID">167</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -645,10 +582,10 @@
 							<reference ref="116517407"/>
 							<reference ref="521490056"/>
 							<reference ref="436716945"/>
-							<reference ref="914953845"/>
-							<reference ref="1921447"/>
-							<reference ref="121398520"/>
-							<reference ref="540735413"/>
+							<reference ref="232896201"/>
+							<reference ref="764919539"/>
+							<reference ref="939582617"/>
+							<reference ref="1042270504"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -731,22 +668,22 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">160</int>
-						<reference key="object" ref="914953845"/>
+						<reference key="object" ref="232896201"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">161</int>
-						<reference key="object" ref="1921447"/>
+						<reference key="object" ref="764919539"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">163</int>
-						<reference key="object" ref="540735413"/>
+						<reference key="object" ref="1042270504"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">166</int>
-						<reference key="object" ref="121398520"/>
+						<reference key="object" ref="939582617"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -756,6 +693,7 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="1.CustomClassName">TPKeyboardAvoidingScrollView</string>
 				<string key="1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="14.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="152.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -784,20 +722,17 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">FormularioContatoViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="nextField:">UITextField</string>
-						<string key="selecionaFoto:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="nextField:">
-							<string key="name">nextField:</string>
-							<string key="candidateClassName">UITextField</string>
-						</object>
-						<object class="IBActionInfo" key="selecionaFoto:">
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">selecionaFoto:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">selecionaFoto:</string>
+						<object class="IBActionInfo" key="NS.object.0">
 							<string key="name">selecionaFoto:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</dictionary>
+					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="foto">UIButton</string>
 						<string key="txtAddress">UITextField</string>
@@ -845,6 +780,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/FormularioContatoViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">TPKeyboardAvoidingScrollView</string>
+					<string key="superclassName">UIScrollView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/TPKeyboardAvoidingScrollView.h</string>
 					</object>
 				</object>
 			</array>

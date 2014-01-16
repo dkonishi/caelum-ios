@@ -27,7 +27,6 @@
 @property (weak, atomic) id<FormularioContatoViewControllerDelegate> delegate;
 
 - (IBAction)selecionaFoto:(id)sender;
-- (IBAction)nextField:(UITextField *)sender;
 
 - (id)initWithContato:(Contato *)contato;
 
