@@ -5,7 +5,7 @@
 //  Created by ios4212 on 13/01/14.
 //  Copyright (c) 2014 Baby. All rights reserved.
 //
-
+#import <CoreLocation/CoreLocation.h>
 #import "FormularioContatoViewController.h"
 #import "Contato.h"
 
@@ -90,6 +90,26 @@
     }
 }
 
+- (IBAction)buscaCoordenada:(id)sender
+{
+    [self.rodinha startAnimating];
+    
+    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
+    [geocoder geocodeAddressString:self.txtAddress.text completionHandler:^(NSArray *resultados, NSError *error){
+        [self.rodinha stopAnimating];
+        
+        if(!error && [resultados count] > 0){
+            CLPlacemark *resultado = resultados[0];
+            CLLocationCoordinate2D coordinate = resultado.location.coordinate;
+
+            NSLog(@"%f %f", coordinate.latitude, coordinate.longitude);
+
+            self.txtLat.text  = [NSString stringWithFormat:@"%f", coordinate.latitude];
+            self.txtLong.text = [NSString stringWithFormat:@"%f", coordinate.longitude];
+        }
+    }];
+}
+
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *image = info[UIImagePickerControllerEditedImage];
@@ -142,4 +162,5 @@
     contato.latitude  = [NSNumber numberWithDouble:[self.txtLat.text doubleValue]];
     contato.longitude = [NSNumber numberWithDouble:[self.txtLong.text doubleValue]];
 }
+
 @end

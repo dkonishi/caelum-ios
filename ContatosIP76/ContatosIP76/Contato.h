@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
-@interface Contato : NSObject <NSCoding>
+@interface Contato : NSObject <NSCoding, MKAnnotation>
 {
     
 }

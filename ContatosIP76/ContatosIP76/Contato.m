@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Baby. All rights reserved.
 //
 
+#import <MapKit/MapKit.h>
 #import "Contato.h"
 
 @implementation Contato
@@ -44,6 +45,21 @@
 - (NSString *)description
 {
     return [NSString stringWithFormat: @"%@, %@", self.name, self.email];
+}
+
+- (CLLocationCoordinate2D) coordinate
+{
+    return CLLocationCoordinate2DMake([self.latitude doubleValue], [self.longitude doubleValue]);
+}
+
+- (NSString *)title
+{
+    return self.name;
+}
+
+- (NSString *)subtitle
+{
+    return self.email;
 }
 
 @end

@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *foto;
 @property (weak, nonatomic) IBOutlet UITextField *txtLat;
 @property (weak, nonatomic) IBOutlet UITextField *txtLong;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *rodinha;
 
 @property (weak, nonatomic) NSMutableArray *contatos;
 @property (strong,  atomic) Contato *contato;
@@ -27,6 +28,7 @@
 @property (weak, atomic) id<FormularioContatoViewControllerDelegate> delegate;
 
 - (IBAction)selecionaFoto:(id)sender;
+- (IBAction)buscaCoordenada:(id)sender;
 
 - (id)initWithContato:(Contato *)contato;
 

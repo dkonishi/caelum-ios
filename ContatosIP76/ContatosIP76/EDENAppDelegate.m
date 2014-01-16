@@ -34,6 +34,7 @@
     
     
     ContatosNoMapaViewController *mapa = [[ContatosNoMapaViewController alloc] init];
+    mapa.contatos = self.contatos;
     UINavigationController *navMapa = [[UINavigationController alloc] initWithRootViewController:mapa];
 
     

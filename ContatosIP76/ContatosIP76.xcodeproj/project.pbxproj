@@ -26,6 +26,7 @@
 		7E510EA51884572200501F0F /* FormularioContatoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E510EA31884572200501F0F /* FormularioContatoViewController.m */; };
 		7E510EA61884572200501F0F /* FormularioContatoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E510EA41884572200501F0F /* FormularioContatoViewController.xib */; };
 		7E510EA9188467FF00501F0F /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E510EA8188467FF00501F0F /* Contato.m */; };
+		7E641F55188820FB00B62DE7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E641F54188820FB00B62DE7 /* CoreLocation.framework */; };
 		7E796EF018856BD000CCCDCC /* ListContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E796EEF18856BD000CCCDCC /* ListContactViewController.m */; };
 		7EE7056D1886EBBE0059182A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE7056C1886EBBE0059182A /* MessageUI.framework */; };
 		7EE7056F188706C20059182A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE7056E188706C20059182A /* MapKit.framework */; };
@@ -83,6 +84,7 @@
 		7E510EA41884572200501F0F /* FormularioContatoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormularioContatoViewController.xib; sourceTree = "<group>"; };
 		7E510EA7188467FF00501F0F /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
 		7E510EA8188467FF00501F0F /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
+		7E641F54188820FB00B62DE7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7E796EEE18856BCF00CCCDCC /* ListContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListContactViewController.h; sourceTree = "<group>"; };
 		7E796EEF18856BD000CCCDCC /* ListContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListContactViewController.m; sourceTree = "<group>"; };
 		7EE7056B1886AD180059182A /* FormularioContatoViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormularioContatoViewControllerDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E641F55188820FB00B62DE7 /* CoreLocation.framework in Frameworks */,
 				7EE7056F188706C20059182A /* MapKit.framework in Frameworks */,
 				7EE7056D1886EBBE0059182A /* MessageUI.framework in Frameworks */,
 				7E510E6E1884534E00501F0F /* UIKit.framework in Frameworks */,
@@ -146,6 +149,7 @@
 		7E510E611884534E00501F0F = {
 			isa = PBXGroup;
 			children = (
+				7E641F54188820FB00B62DE7 /* CoreLocation.framework */,
 				7E3647C918881B9B00B8282B /* TPKeyboardAvoiding */,
 				7EE7059A18870F750059182A /* Default.png */,
 				7EE7059B18870F750059182A /* Default@2x.png */,

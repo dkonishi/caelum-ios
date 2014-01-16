@@ -7,6 +7,7 @@
 //
 
 #import "ContatosNoMapaViewController.h"
+#import "Contato.h"
 #import <MapKit/MapKit.h>
 
 @interface ContatosNoMapaViewController ()
@@ -48,6 +49,50 @@
     MKUserTrackingBarButtonItem *btn = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.map];
     
     self.navigationItem.leftBarButtonItem = btn;
+    
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    if ([annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
+    }
+
+    static NSString *pool = @"pinos";
+    
+    MKPinAnnotationView *pin = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pool];
+    
+    if (!pin) {
+        pin = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pool];
+    }
+    else {
+        pin.annotation = annotation;
+    }
+    
+    pin.pinColor = MKPinAnnotationColorPurple;
+    pin.canShowCallout = YES;
+    
+    Contato *contato = (Contato *)annotation;
+    
+    if (contato.photo) {
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0, 0.0, 32.0,32.0)];
+        imageView.image = contato.photo;
+        pin.leftCalloutAccessoryView = imageView;
+    }
+    
+    return pin;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.map addAnnotations:self.contatos];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.map removeAnnotations:self.contatos];
 }
 
 - (void)didReceiveMemoryWarning

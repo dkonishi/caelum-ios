@@ -153,7 +153,7 @@
 
         UIActionSheet *as = [[UIActionSheet alloc] initWithTitle:contatoSelecionado.name delegate:self cancelButtonTitle:@"cancelar" destructiveButtonTitle:nil otherButtonTitles:@"Ligar", @"Enviar email", @"Visualizar site", @"Mostrar mapa", nil];
 
-        [as showInView:self.view];
+        [as showFromTabBar:self.tabBarController.tabBar];
         
         NSLog(@"Contato %@", contatoSelecionado);
     }
