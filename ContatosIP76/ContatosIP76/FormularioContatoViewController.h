@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtLong;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *rodinha;
 
+@property (weak, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @property (weak, nonatomic) NSMutableArray *contatos;
 @property (strong,  atomic) Contato *contato;
 

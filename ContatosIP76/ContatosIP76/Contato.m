@@ -11,18 +11,20 @@
 
 @implementation Contato
 
+@dynamic name, phone, email, address, site, latitude, longitude, photo;
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super init];
     
     if (self){
-        self.name     = [aDecoder decodeObjectForKey:@"name"];
-        self.phone    = [aDecoder decodeObjectForKey:@"phone"];
-        self.email    = [aDecoder decodeObjectForKey:@"email"];
-        self.address  = [aDecoder decodeObjectForKey:@"address"];
-        self.site     = [aDecoder decodeObjectForKey:@"site"];
-        self.photo    = [aDecoder decodeObjectForKey:@"photo"];
-        self.latitude = [aDecoder decodeObjectForKey:@"latitude"];
+        self.name      = [aDecoder decodeObjectForKey:@"name"];
+        self.phone     = [aDecoder decodeObjectForKey:@"phone"];
+        self.email     = [aDecoder decodeObjectForKey:@"email"];
+        self.address   = [aDecoder decodeObjectForKey:@"address"];
+        self.site      = [aDecoder decodeObjectForKey:@"site"];
+        self.photo     = [aDecoder decodeObjectForKey:@"photo"];
+        self.latitude  = [aDecoder decodeObjectForKey:@"latitude"];
         self.longitude = [aDecoder decodeObjectForKey:@"longitude"];
     }
     

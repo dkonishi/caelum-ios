@@ -144,7 +144,9 @@
 
 - (Contato *)pegaDadosDoFormulario
 {
-    Contato *contato = [[Contato alloc] init];
+    Contato *contato = [NSEntityDescription
+                        insertNewObjectForEntityForName:@"Contato"
+                        inManagedObjectContext:self.managedObjectContext];
     
     [self preencheContato:contato];
     

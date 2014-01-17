@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E00521118894992000ECC7B /* Modelo_Contatos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E00520F18894992000ECC7B /* Modelo_Contatos.xcdatamodeld */; };
 		7E3647D218881B9B00B8282B /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3647CB18881B9B00B8282B /* TPKeyboardAvoidingCollectionView.m */; };
 		7E3647D318881B9B00B8282B /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3647CD18881B9B00B8282B /* TPKeyboardAvoidingScrollView.m */; };
 		7E3647D418881B9B00B8282B /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3647CF18881B9B00B8282B /* TPKeyboardAvoidingTableView.m */; };
@@ -27,6 +28,7 @@
 		7E510EA61884572200501F0F /* FormularioContatoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E510EA41884572200501F0F /* FormularioContatoViewController.xib */; };
 		7E510EA9188467FF00501F0F /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E510EA8188467FF00501F0F /* Contato.m */; };
 		7E641F55188820FB00B62DE7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E641F54188820FB00B62DE7 /* CoreLocation.framework */; };
+		7E641F571888600A00B62DE7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E641F561888600900B62DE7 /* CoreData.framework */; };
 		7E796EF018856BD000CCCDCC /* ListContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E796EEF18856BD000CCCDCC /* ListContactViewController.m */; };
 		7EE7056D1886EBBE0059182A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE7056C1886EBBE0059182A /* MessageUI.framework */; };
 		7EE7056F188706C20059182A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE7056E188706C20059182A /* MapKit.framework */; };
@@ -54,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E00521018894992000ECC7B /* Modelo_Contatos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modelo_Contatos.xcdatamodel; sourceTree = "<group>"; };
 		7E3647CA18881B9B00B8282B /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		7E3647CB18881B9B00B8282B /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		7E3647CC18881B9B00B8282B /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 		7E510EA7188467FF00501F0F /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
 		7E510EA8188467FF00501F0F /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
 		7E641F54188820FB00B62DE7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7E641F561888600900B62DE7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7E796EEE18856BCF00CCCDCC /* ListContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListContactViewController.h; sourceTree = "<group>"; };
 		7E796EEF18856BD000CCCDCC /* ListContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListContactViewController.m; sourceTree = "<group>"; };
 		7EE7056B1886AD180059182A /* FormularioContatoViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormularioContatoViewControllerDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E641F571888600A00B62DE7 /* CoreData.framework in Frameworks */,
 				7E641F55188820FB00B62DE7 /* CoreLocation.framework in Frameworks */,
 				7EE7056F188706C20059182A /* MapKit.framework in Frameworks */,
 				7EE7056D1886EBBE0059182A /* MessageUI.framework in Frameworks */,
@@ -149,6 +154,7 @@
 		7E510E611884534E00501F0F = {
 			isa = PBXGroup;
 			children = (
+				7E641F561888600900B62DE7 /* CoreData.framework */,
 				7E641F54188820FB00B62DE7 /* CoreLocation.framework */,
 				7E3647C918881B9B00B8282B /* TPKeyboardAvoiding */,
 				7EE7059A18870F750059182A /* Default.png */,
@@ -217,6 +223,7 @@
 				7E510E761884534E00501F0F /* InfoPlist.strings */,
 				7E510E791884534E00501F0F /* main.m */,
 				7E510E7B1884534E00501F0F /* ContatosIP76-Prefix.pch */,
+				7E00520F18894992000ECC7B /* Modelo_Contatos.xcdatamodeld */,
 				7E510E831884534E00501F0F /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
@@ -370,6 +377,7 @@
 				7E3647D318881B9B00B8282B /* TPKeyboardAvoidingScrollView.m in Sources */,
 				7E3647D418881B9B00B8282B /* TPKeyboardAvoidingTableView.m in Sources */,
 				7E3647D518881B9B00B8282B /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				7E00521118894992000ECC7B /* Modelo_Contatos.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +562,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E00520F18894992000ECC7B /* Modelo_Contatos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E00521018894992000ECC7B /* Modelo_Contatos.xcdatamodel */,
+			);
+			currentVersion = 7E00521018894992000ECC7B /* Modelo_Contatos.xcdatamodel */;
+			path = Modelo_Contatos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7E510E621884534E00501F0F /* Project object */;
 }

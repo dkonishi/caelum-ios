@@ -40,7 +40,12 @@
 -(void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(editingStyle == UITableViewCellEditingStyleDelete){
+        Contato *contato = self.contatos[indexPath.row];
+        
         [self.contatos removeObjectAtIndex:indexPath.row];
+        
+        [self.managedObjectContext deleteObject:contato];
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
@@ -58,7 +63,8 @@
     
     FormularioContatoViewController *form = [[FormularioContatoViewController alloc] initWithContato: contato];
     
-    form.delegate = self;
+    form.delegate             = self;
+    form.managedObjectContext = self.managedObjectContext;
     
     [self.navigationController pushViewController:form animated:YES];
 }
@@ -123,6 +129,7 @@
     FormularioContatoViewController *form = [[FormularioContatoViewController alloc] init];
     
     form.delegate = self;
+    form.managedObjectContext = self.managedObjectContext;
     
     [self.navigationController pushViewController:form animated:YES];
 }
