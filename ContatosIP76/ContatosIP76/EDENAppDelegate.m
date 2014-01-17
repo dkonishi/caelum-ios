@@ -17,22 +17,32 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 
+- (void)inserirDados
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    BOOL dadosInseridos = [userDefaults boolForKey:@"dadosInseridos"];
+
+    if(!dadosInseridos){
+        Contato *contato = [NSEntityDescription insertNewObjectForEntityForName:@"Contato" inManagedObjectContext:self.managedObjectContext];
+        contato.name    = @"Caelum SP";
+        contato.email   = @"contato@caelum.com.br";
+        contato.site    = @"http://www.caelum.com.br";
+        contato.phone   = @"55 11 5571-2751";
+        contato.address = @"Rua Vergueiro 3185, cj. 87 ,São Paulo, SP, Brasil";
+
+        [self saveContext];
+        
+        [userDefaults setBool:YES forKey:@"dadosInseridos"];
+        [userDefaults synchronize];
+    }
+
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-//    NSArray *dirs = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-//    
-//    NSString *docDir = dirs[0];
-//    
-//    self.nomeArquivo = [NSString stringWithFormat:@"%@/Contatos", docDir];
-//
-//    self.contatos = [NSKeyedUnarchiver unarchiveObjectWithFile:self.nomeArquivo];
-    
-//    if(!self.contatos){
-//         self.contatos = [[NSMutableArray alloc] init];
-//    }
-    
+
+    [self inserirDados];
     self.contatos = [self buscaContatos];
     
     ListContactViewController *list = [[ListContactViewController alloc] init];
