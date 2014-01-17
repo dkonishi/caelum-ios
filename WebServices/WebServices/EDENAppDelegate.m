@@ -7,6 +7,7 @@
 //
 
 #import "EDENAppDelegate.h"
+#import <AFNetworkActivityLogger/AFNetworkActivityLogger.h>
 
 @implementation EDENAppDelegate
 
@@ -16,6 +17,9 @@
 
     // Override point for customization after application launch.
     
+    [[AFNetworkActivityLogger sharedLogger] startLogging];
+    [[AFNetworkActivityLogger sharedLogger] setLevel:AFLoggerLevelDebug];
+    
     EDENViewController *viewController = [[EDENViewController alloc]init];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
@@ -23,7 +27,9 @@
     self.window.rootViewController = nav;
     
     self.window.backgroundColor = [UIColor whiteColor];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
